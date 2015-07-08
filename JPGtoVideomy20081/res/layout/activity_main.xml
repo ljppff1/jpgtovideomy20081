@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="31dp"
+        android:text="请选择您要处理操作后视频保存的位置"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="1111"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="5"
+        android:numeric="integer"
+       android:layout_below="@id/editText1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+        <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:text="请选择文件目录哦"
+        android:id="@+id/choosefile"
+        />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choosefile"
+        android:layout_centerHorizontal="true"
+        
+        android:text="暂停/继续" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="开始/结束" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTVmainlength"
+                android:layout_below="@id/button1"
+        />   
+    <ProgressBar android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/mTVmainlength"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_below="@id/button1"
+        android:progress="0"
+        />
+        
+</RelativeLayout>
